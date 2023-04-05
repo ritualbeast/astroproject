@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import nosotros from '../img/nosotros.jpg';
+---
+
+<Layout title="Nosotros" description="Guitarra  xxxxxxxxxxxx">
+	<main class="contenedor">
+		<h1 class="heading">Nosotros</h1>
+
+        <div class="contenido"></div>
+        <img src={nosotros} alt="imagen nosotros" >
+        <div>
+            <p>Lorem ip sum dolor sit am et, consectetur adipisicing elit.
+                 Quisquam, quod, voluptate, voluptates, quae, quia, quibusdam
+                  voluptatem quidem quos nemo quas nesciunt. Quisquam, quod, voluptate, 
+                  voluptates, quae, quia, quibusdam voluptatem quidem quos nemo quas nesciunt.</p>
+                  <p>Lorem ip sum dolor sit am et, consectetur adipisicing elit.
+                    Quisquam, quod, voluptate, voluptates, quae, quia, quibusdam
+                     voluptatem quidem quos nemo quas nesciunt. Quisquam, quod, voluptate, 
+                     voluptates, quae, quia, quibusdam voluptatem quidem quos nemo quas nesciunt.</p>
+
+        </div>
+	</main>
+</Layout>
+
+<style>
+    .contenido {
+        display: grid;
+        gap: 4rem;
+    }
+    @media (min-width: 768px) {
+        .contenido {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+    }
+
+</style>
